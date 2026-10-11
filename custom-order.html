@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F3E9DC">
+  <meta name="description" content="سفارش ساخت اختصاصی زیورآلات نقره ۹۲۵ دست‌ساز در نقره زرین فخر؛ طرح دلخواه خود را برای بررسی ارسال کنید.">
+  <title>سفارش ساخت اختصاصی | SILVER ZARIN FAKHR</title>
+  <style>
+    :root {
+      --ivory: #F3E9DC;
+      --gold: #B88A4A;
+      --burgundy: #8F1718;
+      --wine: #4A0B09;
+      --white: #FFFFFF;
+      --text: #382923;
+      --muted: #796B60;
+      --border: #E3D4C2;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--text);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.9;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .announcement {
+      background: var(--wine);
+      color: var(--ivory);
+      text-align: center;
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+
+    header {
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+
+    .monogram {
+      width: 55px;
+      height: 55px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      color: var(--burgundy);
+      font-family: Georgia, serif;
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: -2px;
+    }
+
+    .brand-name {
+      color: var(--wine);
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: .7px;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .brand-fa { font-size: 13px; color: var(--muted); }
+
+    .header-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      overflow-x: auto;
+      padding: 12px 20px;
+      white-space: nowrap;
+      border-top: 1px solid #F0E7DC;
+      max-width: 1120px;
+      margin: auto;
+      font-size: 13px;
+    }
+
+    nav a:hover, .header-links a:hover { color: var(--burgundy); }
+
+    main {
+      max-width: 1120px;
+      margin: auto;
+      padding: 24px 20px 56px;
+    }
+
+    .breadcrumb { color: var(--muted); font-size: 12px; margin-bottom: 18px; }
+
+    .hero {
+      background: linear-gradient(135deg, #FFFDF9, #EAD8C0);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px 28px;
+    }
+
+    .eyebrow { color: var(--burgundy); font-size: 12px; font-weight: bold; letter-spacing: 1px; }
+
+    h1 {
+      color: var(--wine);
+      font-size: clamp(26px, 5vw, 40px);
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+
+    .hero p { max-width: 720px; margin: 8px 0 0; color: #665348; font-size: 14px; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin: 26px 0 36px;
+    }
+
+    .step {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .step-number {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      background: #F4E4CE;
+      color: var(--burgundy);
+      border-radius: 50%;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .step h2 { color: var(--wine); font-size: 16px; margin: 0 0 5px; }
+    .step p { color: var(--muted); font-size: 12px; margin: 0; }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .form-card, .info-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 25px;
+    }
+
+    .form-card h2, .info-card h2 {
+      color: var(--wine);
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+
+    .intro { color: var(--muted); font-size: 13px; margin: 0 0 22px; }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .field { display: flex; flex-direction: column; gap: 7px; }
+    .field.full { grid-column: 1 / -1; }
+
+    label { color: var(--text); font-size: 13px; font-weight: bold; }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      background: #FFFDFA;
+      color: var(--text);
+      font: inherit;
+      font-size: 13px;
+      outline-color: var(--gold);
+    }
+
+    textarea { min-height: 125px; resize: vertical; }
+    .hint { font-size: 11px; color: var(--muted); }
+
+    .form-actions { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .button {
+      display: inline-block;
+      border: 0;
+      border-radius: 10px;
+      background: var(--burgundy);
+      color: var(--white);
+      padding: 12px 18px;
+      font-family: inherit;
+      font-size: 13px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button:hover { background: var(--wine); }
+    .button-gold { background: var(--gold); color: var(--wine); font-weight: bold; }
+
+    .notice {
+      background: #FFF8EE;
+      border-right: 3px solid var(--gold);
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 12px;
+      color: #6D5947;
+      margin-top: 18px;
+    }
+
+    .info-card { background: var(--wine); color: var(--ivory); }
+    .info-card h2 { color: var(--ivory); }
+    .info-card p { color: #E8D8C6; font-size: 13px; }
+    .info-card ul { padding-right: 20px; color: #E8D8C6; font-size: 12px; }
+    .info-card li { margin-bottom: 8px; }
+    .info-card .button { background: var(--gold); color: var(--wine); font-weight: bold; width: 100%; margin-top: 10px; }
+
+    footer {
+      background: #E8D8C6;
+      border-top: 1px solid var(--border);
+      padding: 30px 20px 18px;
+    }
+
+    .footer-inner {
+      max-width: 1120px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    footer h3 { color: var(--wine); font-size: 15px; margin: 0 0 10px; }
+    footer p, footer a { font-size: 12px; color: #665348; }
+    .footer-links { display: grid; gap: 5px; }
+
+    .copyright {
+      max-width: 1120px;
+      margin: 22px auto 0;
+      padding-top: 14px;
+      border-top: 1px solid #D6C3AD;
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 760px) {
+      .header-inner { padding: 14px; }
+      .header-links { gap: 12px; }
+      nav { gap: 18px; padding-inline: 14px; }
+      main { padding: 18px 14px 38px; }
+      .hero { padding: 25px 19px; }
+      .steps { grid-template-columns: 1fr; gap: 10px; }
+      .form-layout { grid-template-columns: 1fr; }
+      .form-card, .info-card { padding: 19px; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .footer-inner > section:first-child { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 420px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-inner > section:first-child { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">نقره ۹۲۵ دست‌ساز؛ زیبایی در درخشندگی، اصالت در ماندگاری</div>
+
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="صفحه اصلی نقره زرین فخر">
+        <span class="monogram">SZF</span>
+        <span>
+          <span class="brand-name">SILVER ZARIN FAKHR</span><br>
+          <span class="brand-fa">نقره زرین فخر</span>
+        </span>
+      </a>
+      <div class="header-links">
+        <a href="shop.html">همه محصولات</a>
+        <a href="shop.html">فروشگاه</a>
+        <a href="index.html">صفحه اصلی</a>
+      </div>
+    </div>
+
+    <nav aria-label="دسته‌بندی محصولات">
+      <a href="shop.html">فروشگاه</a>
+      <a href="rings.html">انگشترها</a>
+      <a href="necklaces.html">گردنبند و پلاک</a>
+      <a href="bracelets.html">دستبندها</a>
+      <a href="earrings.html">گوشواره‌ها</a>
+      <a href="chains.html">زنجیر نقره</a>
+      <a href="sets.html">سرویس و نیم‌ست</a>
+      <a href="custom-order.html" aria-current="page">سفارش ساخت</a>
+      <a href="contact.html">ارتباط با ما</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="breadcrumb">
+      <a href="index.html">صفحه اصلی</a> ←
+      <a href="shop.html">فروشگاه</a> ← سفارش ساخت اختصاصی
+    </div>
+
+    <section class="hero">
+      <div class="eyebrow">SILVER ZARIN FAKHR</div>
+      <h1>زیورآلات نقره، مطابق سلیقه تو</h1>
+      <p>اگر طرحی خاص در ذهن داری، جزئیات آن را برای زرین فخر بفرست تا امکان ساخت، مشخصات فنی و برآورد هزینه بررسی شود. هر سفارش پس از بررسی و تأیید نهایی انجام خواهد شد.</p>
+    </section>
+
+    <section class="steps" aria-label="مراحل سفارش">
+      <article class="step">
+        <div class="step-number">۱</div>
+        <h2>ثبت ایده</h2>
+        <p>نوع زیورآلات، طرح دلخواه و جزئیات موردنظرت را مشخص کن.</p>
+      </article>
+      <article class="step">
+        <div class="step-number">۲</div>
+        <h2>بررسی و برآورد</h2>
+        <p>امکان ساخت، وزن تقریبی، عیار، زمان و هزینه بررسی می‌شود.</p>
+      </article>
+      <article class="step">
+        <div class="step-number">۳</div>
+        <h2>تأیید نهایی</h2>
+        <p>پس از توافق بر مشخصات و قیمت، مراحل بعدی سفارش هماهنگ می‌شود.</p>
+      </article>
+    </section>
+
+    <section class="form-layout">
+      <div class="form-card">
+        <h2>درخواست ساخت اختصاصی</h2>
+        <p class="intro">فرم زیر برای آماده‌کردن متن درخواست است؛ پس از تکمیل، می‌توانی آن را در واتساپ یا پیام‌رسان مورد توافق برای پشتیبانی ارسال کنی.</p>
+
+        <form id="customOrderForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="customerName">نام شما</label>
+              <input id="customerName" name="customerName" type="text" autocomplete="name" placeholder="نام و نام خانوادگی" required>
+            </div>
+
+            <div class="field">
+              <label for="customerPhone">شماره تماس</label>
+              <input id="customerPhone" name="customerPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="شماره تماس برای هماهنگی" required>
+            </div>
+
+            <div class="field">
+              <label for="jewelryType">نوع زیورآلات</label>
+              <select id="jewelryType" name="jewelryType" required>
+                <option value="">انتخاب کن</option>
+                <option>انگشتر نقره</option>
+                <option>گردنبند یا پلاک نقره</option>
+                <option>دستبند نقره</option>
+                <option>زنجیر نقره</option>
+                <option>گوشواره نقره</option>
+                <option>سرویس یا نیم‌ست نقره</option>
+                <option>طرح دیگر</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="silverPurity">عیار درخواستی</label>
+              <select id="silverPurity" name="silverPurity">
+                <option value="۹۲۵">نقره ۹۲۵</option>
+                <option value="نیازمند مشاوره">نیازمند مشاوره</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="budget">بودجه تقریبی</label>
+              <select id="budget" name="budget">
+                <option value="نیازمند مشاوره">ترجیح می‌دهم مشاوره بگیرم</option>
+                <option>کمتر از ۵ میلیون تومان</option>
+                <option>۵ تا ۱۰ میلیون تومان</option>
+                <option>۱۰ تا ۲۰ میلیون تومان</option>
+                <option>بیشتر از ۲۰ میلیون تومان</option>
+              </select>
+              <span class="hint">بودجه صرفاً جهت راهنمایی اولیه است؛ قیمت نهایی پس از بررسی اعلام می‌شود.</span>
+            </div>
+
+            <div class="field">
+              <label for="deadline">زمان موردنظر</label>
+              <select id="deadline" name="deadline">
+                <option>محدودیت زمانی ندارم</option>
+                <option>در اولین زمان ممکن</option>
+                <option>برای مناسبت مشخص</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="designDetails">توضیحات طرح</label>
+              <textarea id="designDetails" name="designDetails" placeholder="طرح، اندازه، سایز انگشتر، نوع نگین، نوشته یا هر جزئیات مهم دیگر را بنویس..." required></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="button" type="submit">آماده‌سازی درخواست</button>
+            <button class="button button-gold" type="reset">پاک کردن فرم</button>
+          </div>
+
+          <div class="notice">
+            توجه: این فرم به‌تنهایی اطلاعات را در سرور ذخیره یا برای فروشگاه ارسال نمی‌کند. پس از آماده‌سازی متن، باید آن را از طریق پیام‌رسان برای پشتیبانی بفرستی.
+          </div>
+        </form>
+
+        <div id="requestResult" class="notice" role="status" aria-live="polite" hidden>
+          <p id="requestText" style="white-space: pre-wrap;"></p>
+          <button id="copyRequest" class="button" type="button">کپی متن درخواست</button>
+        </div>
+      </div>
+
+      <aside class="info-card">
+        <h2>قبل از ثبت سفارش</h2>
+        <p>برای اینکه بررسی سفارش دقیق‌تر باشد، این موارد را در نظر داشته باش:</p>
+        <ul>
+          <li>در صورت امکان، تصویر یا طرح مرجع را هنگام تماس ارسال کن.</li>
+          <li>سایز، اندازه، وزن تقریبی و نوع نگین را در توضیحات ذکر کن.</li>
+          <li>عیار نقره و جزئیات ساخت پیش از شروع کار هماهنگ می‌شود.</li>
+          <li>قیمت و زمان تحویل پس از بررسی طرح اعلام می‌شود.</li>
+          <li>ساخت سفارش پس از تأیید مشخصات و شرایط نهایی انجام خواهد شد.</li>
+        </ul>
+        <a class="button" href="contact.html">راه‌های ارتباط با زرین فخر</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <section>
+        <h3>SILVER ZARIN FAKHR | نقره زرین فخر</h3>
+        <p>نقره زرین فخر؛ زیبایی در درخشندگی، اصالت در ماندگاری.</p>
+        <p>زیورآلات نقره خاص و دست‌ساز.</p>
+      </section>
+      <section>
+        <h3>دسترسی سریع</h3>
+        <div class="footer-links">
+          <a href="index.html">صفحه اصلی</a>
+          <a href="shop.html">فروشگاه</a>
+          <a href="rings.html">انگشترها</a>
+          <a href="necklaces.html">گردنبند و پلاک</a>
+          <a href="bracelets.html">دستبندها</a>
+          <a href="earrings.html">گوشواره‌ها</a>
+        </div>
+      </section>
+      <section>
+        <h3>ارتباط با زرین فخر</h3>
+        <div class="footer-links">
+          <a href="contact.html">تماس با ما</a>
+          <a href="custom-order.html">سفارش ساخت</a>
+          <a href="https://instagram.com/zarinfakhrSZF" target="_blank" rel="noopener noreferrer">اینستاگرام</a>
+          <a href="https://t.me/zarinfakhrSZF" target="_blank" rel="noopener noreferrer">تلگرام</a>
+        </div>
+      </section>
+    </div>
+    <div class="copyright">© SILVER ZARIN FAKHR — تمامی حقوق محفوظ است.</div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('customOrderForm');
+    const resultBox = document.getElementById('requestResult');
+    const requestText = document.getElementById('requestText');
+    const copyButton = document.getElementById('copyRequest');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      if (!form.reportValidity()) return;
+
+      const data = new FormData(form);
+      const message = [
+        'درخواست ساخت اختصاصی — نقره زرین فخر',
+        '',
+        'نام: ' + data.get('customerName'),
+        'شماره تماس: ' + data.get('customerPhone'),
+        'نوع زیورآلات: ' + data.get('jewelryType'),
+        'عیار درخواستی: ' + data.get('silverPurity'),
+        'بودجه تقریبی: ' + data.get('budget'),
+        'زمان موردنظر: ' + data.get('deadline'),
+        '',
+        'توضیحات طرح:',
+        data.get('designDetails')
+      ].join('\n');
+
+      requestText.textContent = message;
+      resultBox.hidden = false;
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+
+    copyButton.addEventListener('click', async function () {
+      try {
+        await navigator.clipboard.writeText(requestText.textContent);
+        copyButton.textContent = 'متن کپی شد ✓';
+      } catch (error) {
+        const range = document.createRange();
+        range.selectNodeContents(requestText);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        copyButton.textContent = 'متن را انتخاب کن و کپی بگیر';
+      }
+    });
+
+    form.addEventListener('reset', function () {
+      resultBox.hidden = true;
+      copyButton.textContent = 'کپی متن درخواست';
+    });
+  </script>
+</body>
+    </html>
