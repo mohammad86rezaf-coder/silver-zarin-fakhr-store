@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#F3E9DC">
-  <meta name="description" content="ارتباط با نقره زرین فخر؛ برای پرسش درباره زیورآلات نقره ۹۲۵، پیگیری سفارش و سفارش ساخت اختصاصی با ما در تماس باشید.">
+  <meta name="description" content="ارتباط با نقره زرین فخر؛ برای پرسش درباره زیورآلات نقره ۹۲۵، محصولات و سفارش ساخت اختصاصی با ما در تماس باشید.">
   <title>ارتباط با ما | نقره زرین فخر</title>
 
   <style>
@@ -14,10 +14,10 @@
       --gold: #B88A4A;
       --burgundy: #8F1718;
       --wine: #4A0B09;
-      --silver: #C7C4BE;
       --text: #382A25;
       --muted: #786B63;
       --border: #E7D9C8;
+      --green: #287B52;
     }
 
     * {
@@ -41,9 +41,9 @@
       text-decoration: none;
     }
 
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
+    a:focus-visible {
+      outline: 2px solid var(--burgundy);
+      outline-offset: 4px;
     }
 
     .announcement {
@@ -145,8 +145,6 @@
     }
 
     .hero {
-      position: relative;
-      overflow: hidden;
       padding: 38px 25px;
       border: 1px solid var(--border);
       border-radius: 18px;
@@ -198,11 +196,17 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       background: var(--white);
+      transition: border-color .2s ease, transform .2s ease;
+    }
+
+    .contact-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
     }
 
     .contact-icon {
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
       margin-bottom: 9px;
       display: grid;
       place-items: center;
@@ -210,6 +214,7 @@
       background: #F4E7D5;
       color: var(--burgundy);
       font-size: 21px;
+      font-weight: bold;
     }
 
     .contact-card h3 {
@@ -219,22 +224,34 @@
     }
 
     .contact-card p {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       color: var(--muted);
       font-size: 12px;
+    }
+
+    .social-handle {
+      display: block;
+      direction: ltr;
+      text-align: right;
+      margin-bottom: 13px;
+      color: var(--burgundy);
+      font-size: 13px;
+      font-weight: bold;
+      overflow-wrap: anywhere;
     }
 
     .contact-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 42px;
-      padding: 9px 14px;
+      min-height: 43px;
+      padding: 9px 15px;
       border: 1px solid var(--gold);
       border-radius: 8px;
       color: var(--burgundy);
       font-size: 12px;
       font-weight: bold;
+      transition: background .2s ease, color .2s ease;
     }
 
     .contact-button.primary {
@@ -243,14 +260,24 @@
       color: white;
     }
 
+    .contact-button:hover {
+      background: var(--wine);
+      border-color: var(--wine);
+      color: white;
+    }
+
     .notice {
       margin-top: 20px;
       padding: 16px;
       border-right: 3px solid var(--gold);
       border-radius: 8px;
-      background: #FFFCF8;
+      background: var(--white);
       color: var(--muted);
       font-size: 12px;
+    }
+
+    .notice strong {
+      color: var(--wine);
     }
 
     .trust-box {
@@ -335,6 +362,10 @@
       font-size: 12px;
     }
 
+    .footer-links a:hover {
+      color: var(--burgundy);
+    }
+
     .copyright {
       margin-top: 18px;
       padding-top: 13px;
@@ -389,6 +420,18 @@
         padding: 18px;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+      }
+    }
   </style>
 </head>
 
@@ -435,20 +478,22 @@
       <h1>با زرین فخر در ارتباط باش</h1>
       <p>
         برای پرسش درباره محصولات، دریافت اطلاعات بیشتر یا ثبت سفارش ساخت اختصاصی،
-        راه ارتباطی مناسب خودت را انتخاب کن. با کمال میل پاسخ‌گوی پرسش‌های تو هستیم.
+        راه ارتباطی مناسب خودت را انتخاب کن. پاسخ‌گوی پرسش‌های تو هستیم.
       </p>
     </section>
 
-    <h2 class="section-title">چطور می‌توانی با ما تماس بگیری؟</h2>
+    <h2 class="section-title">راه‌های ارتباط با ما</h2>
     <p class="section-description">
-      یکی از راه‌های ارتباطی زیر را انتخاب کن.
+      از طریق شبکه اجتماعی دلخواهت با نقره زرین فخر همراه شو.
     </p>
 
     <section class="contact-grid" aria-label="راه‌های ارتباطی">
+
       <article class="contact-card">
         <div class="contact-icon" aria-hidden="true">◎</div>
         <h3>اینستاگرام زرین فخر</h3>
-        <p>برای مشاهده طرح‌ها، پرسیدن درباره محصولات و ارتباط مستقیم با فروشگاه.</p>
+        <p>مشاهده محصولات، بررسی طرح‌ها و ارسال پیام برای پرسش درباره سفارش.</p>
+        <span class="social-handle">@zarinfakhrSZF</span>
         <a class="contact-button primary"
            href="https://www.instagram.com/zarinfakhrSZF/"
            target="_blank" rel="noopener noreferrer">
@@ -458,19 +503,32 @@
 
       <article class="contact-card">
         <div class="contact-icon" aria-hidden="true">➤</div>
-        <h3>کانال تلگرام</h3>
-        <p>برای مراجعه به کانال رسمی زرین فخر و دنبال‌کردن مطالب فروشگاه.</p>
+        <h3>تلگرام زرین فخر</h3>
+        <p>برای مراجعه به حساب تلگرام و ارتباط از طریق این پیام‌رسان.</p>
+        <span class="social-handle">@silverzarinfakhr</span>
         <a class="contact-button"
-           href="https://t.me/zarinfakhrSZF"
+           href="https://t.me/silverzarinfakhr"
            target="_blank" rel="noopener noreferrer">
           ورود به تلگرام
         </a>
       </article>
 
       <article class="contact-card">
+        <div class="contact-icon" aria-hidden="true">◈</div>
+        <h3>روبیکا زرین فخر</h3>
+        <p>برای مراجعه به حساب روبیکا و ارتباط با نقره زرین فخر.</p>
+        <span class="social-handle">@silverzarinfakhr</span>
+        <a class="contact-button"
+           href="https://rubika.ir/silverzarinfakhr"
+           target="_blank" rel="noopener noreferrer">
+          ورود به روبیکا
+        </a>
+      </article>
+
+      <article class="contact-card">
         <div class="contact-icon" aria-hidden="true">✧</div>
         <h3>سفارش ساخت اختصاصی</h3>
-        <p>اگر طرح خاصی در ذهن داری، جزئیات آن را برای بررسی اولیه ثبت کن.</p>
+        <p>طرح دلخواهت را معرفی کن تا امکان ساخت و جزئیات سفارش بررسی شود.</p>
         <a class="contact-button"
            href="custom-order.html">
           ثبت درخواست ساخت
@@ -479,19 +537,19 @@
 
       <article class="contact-card">
         <div class="contact-icon" aria-hidden="true">◇</div>
-        <h3>مشاهده محصولات</h3>
-        <p>برای دیدن دسته‌بندی‌های زیورآلات نقره و بررسی محصولات فروشگاه.</p>
+        <h3>فروشگاه نقره زرین فخر</h3>
+        <p>برای مشاهده دسته‌بندی‌های زیورآلات نقره و بررسی محصولات.</p>
         <a class="contact-button"
            href="shop.html">
-          رفتن به فروشگاه
+          مشاهده محصولات
         </a>
       </article>
+
     </section>
 
     <div class="notice">
       <strong>نکته مهم:</strong>
-      برای جلوگیری از اشتباه در سفارش، پیش از پرداخت یا نهایی‌کردن خرید،
-      مشخصات محصول، وزن، عیار، قیمت نهایی و شرایط ارسال را از فروشگاه تأیید کن.
+      پیش از نهایی‌کردن خرید، مشخصات محصول، وزن، عیار، قیمت نهایی و شرایط ارسال را از فروشگاه تأیید کن.
     </div>
 
     <section class="trust-box">
@@ -526,8 +584,10 @@
       <a href="contact.html">ارتباط با ما</a>
       <a href="https://www.instagram.com/zarinfakhrSZF/"
          target="_blank" rel="noopener noreferrer">اینستاگرام</a>
-      <a href="https://t.me/zarinfakhrSZF"
+      <a href="https://t.me/silverzarinfakhr"
          target="_blank" rel="noopener noreferrer">تلگرام</a>
+      <a href="https://rubika.ir/silverzarinfakhr"
+         target="_blank" rel="noopener noreferrer">روبیکا</a>
     </div>
 
     <p class="copyright">
@@ -535,4 +595,4 @@
     </p>
   </footer>
 </body>
-    </html>
+  </html>
