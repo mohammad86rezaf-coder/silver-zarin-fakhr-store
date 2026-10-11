@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F3E9DC">
+  <meta name="description" content="ارتباط با نقره زرین فخر؛ برای پرسش درباره زیورآلات نقره ۹۲۵، پیگیری سفارش و سفارش ساخت اختصاصی با ما در تماس باشید.">
+  <title>ارتباط با ما | نقره زرین فخر</title>
+
+  <style>
+    :root {
+      --ivory: #F3E9DC;
+      --white: #FFFCF8;
+      --gold: #B88A4A;
+      --burgundy: #8F1718;
+      --wine: #4A0B09;
+      --silver: #C7C4BE;
+      --text: #382A25;
+      --muted: #786B63;
+      --border: #E7D9C8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--text);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .announcement {
+      padding: 9px 14px;
+      background: var(--wine);
+      color: #FFF8EF;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      width: min(1100px, 92%);
+      margin: auto;
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .monogram {
+      width: 53px;
+      height: 53px;
+      border: 1.5px solid var(--gold);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--burgundy);
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      color: var(--wine);
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: .5px;
+    }
+
+    .brand-persian {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .shop-link {
+      display: inline-block;
+      padding: 9px 15px;
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      color: var(--burgundy);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      padding: 12px 4%;
+      background: var(--white);
+      border-top: 1px solid #F1E8DE;
+    }
+
+    nav a {
+      padding: 4px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: var(--burgundy);
+    }
+
+    main {
+      width: min(960px, 92%);
+      margin: auto;
+      padding: 24px 0 55px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 38px 25px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: linear-gradient(135deg, #FFFCF8, #F0DFCB);
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      color: var(--wine);
+      font-size: clamp(24px, 5vw, 34px);
+      line-height: 1.7;
+    }
+
+    .hero p {
+      max-width: 580px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .section-title {
+      margin: 32px 0 7px;
+      color: var(--wine);
+      font-size: 21px;
+    }
+
+    .section-description {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .contact-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--white);
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 9px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #F4E7D5;
+      color: var(--burgundy);
+      font-size: 21px;
+    }
+
+    .contact-card h3 {
+      margin: 0 0 5px;
+      color: var(--wine);
+      font-size: 16px;
+    }
+
+    .contact-card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      color: var(--burgundy);
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .contact-button.primary {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: white;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 16px;
+      border-right: 3px solid var(--gold);
+      border-radius: 8px;
+      background: #FFFCF8;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .trust-box {
+      margin-top: 25px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #EDE0D0;
+    }
+
+    .trust-box h2 {
+      margin: 0 0 10px;
+      color: var(--wine);
+      font-size: 18px;
+    }
+
+    .trust-box ul {
+      margin: 0;
+      padding-right: 20px;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .trust-box li {
+      margin: 6px 0;
+    }
+
+    .custom-box {
+      margin-top: 18px;
+      padding: 22px;
+      border-radius: 14px;
+      background: var(--wine);
+      color: #FFF8EF;
+    }
+
+    .custom-box h2 {
+      margin: 0 0 7px;
+      font-size: 18px;
+    }
+
+    .custom-box p {
+      margin: 0 0 14px;
+      color: #E9D9C8;
+      font-size: 13px;
+    }
+
+    .custom-box .contact-button {
+      background: var(--ivory);
+      border-color: var(--ivory);
+      color: var(--wine);
+    }
+
+    footer {
+      padding: 28px 5% 18px;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-brand {
+      color: var(--wine);
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    footer p {
+      margin: 7px 0 13px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin: 15px 0;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .copyright {
+      margin-top: 18px;
+      padding-top: 13px;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        width: 92%;
+        padding: 14px 0;
+      }
+
+      .monogram {
+        width: 45px;
+        height: 45px;
+        font-size: 15px;
+      }
+
+      .brand-name {
+        font-size: 12px;
+      }
+
+      .brand-persian {
+        font-size: 11px;
+      }
+
+      .shop-link {
+        padding: 8px 10px;
+        font-size: 11px;
+      }
+
+      nav {
+        justify-content: flex-start;
+        gap: 4px 15px;
+      }
+
+      main {
+        padding-top: 18px;
+      }
+
+      .hero {
+        padding: 29px 18px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+      }
+
+      .contact-card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">
+    نقره ۹۲۵ دست‌ساز؛ زیبایی در درخشندگی، اصالت در ماندگاری
+  </div>
+
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="صفحه اصلی نقره زرین فخر">
+        <div class="monogram">SZF</div>
+        <div>
+          <div class="brand-name">SILVER ZARIN FAKHR</div>
+          <div class="brand-persian">نقره زرین فخر</div>
+        </div>
+      </a>
+
+      <a class="shop-link" href="shop.html">مشاهده فروشگاه</a>
+    </div>
+
+    <nav aria-label="منوی اصلی">
+      <a href="index.html">صفحه اصلی</a>
+      <a href="shop.html">فروشگاه</a>
+      <a href="rings.html">انگشترها</a>
+      <a href="necklaces.html">گردنبند و پلاک</a>
+      <a href="bracelets.html">دستبندها</a>
+      <a href="earrings.html">گوشواره‌ها</a>
+      <a href="chains.html">زنجیر نقره</a>
+      <a href="sets.html">سرویس و نیم‌ست</a>
+      <a href="custom-order.html">سفارش ساخت</a>
+      <a href="contact.html" aria-current="page">ارتباط با ما</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="breadcrumb">
+      <a href="index.html">صفحه اصلی</a>
+      ← ارتباط با ما
+    </div>
+
+    <section class="hero">
+      <div class="eyebrow">SILVER ZARIN FAKHR</div>
+      <h1>با زرین فخر در ارتباط باش</h1>
+      <p>
+        برای پرسش درباره محصولات، دریافت اطلاعات بیشتر یا ثبت سفارش ساخت اختصاصی،
+        راه ارتباطی مناسب خودت را انتخاب کن. با کمال میل پاسخ‌گوی پرسش‌های تو هستیم.
+      </p>
+    </section>
+
+    <h2 class="section-title">چطور می‌توانی با ما تماس بگیری؟</h2>
+    <p class="section-description">
+      یکی از راه‌های ارتباطی زیر را انتخاب کن.
+    </p>
+
+    <section class="contact-grid" aria-label="راه‌های ارتباطی">
+      <article class="contact-card">
+        <div class="contact-icon" aria-hidden="true">◎</div>
+        <h3>اینستاگرام زرین فخر</h3>
+        <p>برای مشاهده طرح‌ها، پرسیدن درباره محصولات و ارتباط مستقیم با فروشگاه.</p>
+        <a class="contact-button primary"
+           href="https://www.instagram.com/zarinfakhrSZF/"
+           target="_blank" rel="noopener noreferrer">
+          ورود به اینستاگرام
+        </a>
+      </article>
+
+      <article class="contact-card">
+        <div class="contact-icon" aria-hidden="true">➤</div>
+        <h3>کانال تلگرام</h3>
+        <p>برای مراجعه به کانال رسمی زرین فخر و دنبال‌کردن مطالب فروشگاه.</p>
+        <a class="contact-button"
+           href="https://t.me/zarinfakhrSZF"
+           target="_blank" rel="noopener noreferrer">
+          ورود به تلگرام
+        </a>
+      </article>
+
+      <article class="contact-card">
+        <div class="contact-icon" aria-hidden="true">✧</div>
+        <h3>سفارش ساخت اختصاصی</h3>
+        <p>اگر طرح خاصی در ذهن داری، جزئیات آن را برای بررسی اولیه ثبت کن.</p>
+        <a class="contact-button"
+           href="custom-order.html">
+          ثبت درخواست ساخت
+        </a>
+      </article>
+
+      <article class="contact-card">
+        <div class="contact-icon" aria-hidden="true">◇</div>
+        <h3>مشاهده محصولات</h3>
+        <p>برای دیدن دسته‌بندی‌های زیورآلات نقره و بررسی محصولات فروشگاه.</p>
+        <a class="contact-button"
+           href="shop.html">
+          رفتن به فروشگاه
+        </a>
+      </article>
+    </section>
+
+    <div class="notice">
+      <strong>نکته مهم:</strong>
+      برای جلوگیری از اشتباه در سفارش، پیش از پرداخت یا نهایی‌کردن خرید،
+      مشخصات محصول، وزن، عیار، قیمت نهایی و شرایط ارسال را از فروشگاه تأیید کن.
+    </div>
+
+    <section class="trust-box">
+      <h2>برای خرید مطمئن‌تر</h2>
+      <ul>
+        <li>مشخصات و جزئیات محصول را پیش از نهایی‌کردن سفارش بررسی کن.</li>
+        <li>اگر درباره وزن، سایز، نگین یا نحوه ساخت پرسشی داری، پیش از خرید بپرس.</li>
+        <li>برای سفارش ساخت، جزئیات طرح و شرایط نهایی را پیش از شروع کار هماهنگ کن.</li>
+        <li>قیمت و زمان تحویل را پیش از تأیید نهایی سفارش جویا شو.</li>
+      </ul>
+    </section>
+
+    <section class="custom-box">
+      <h2>طرحی خاص در ذهن داری؟</h2>
+      <p>
+        ایده‌ات را با ما در میان بگذار تا امکان ساخت و جزئیات سفارش بررسی شود.
+      </p>
+      <a class="contact-button" href="custom-order.html">
+        شروع سفارش ساخت اختصاصی
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">SILVER ZARIN FAKHR | نقره زرین فخر</div>
+    <p>زیبایی در درخشندگی، اصالت در ماندگاری</p>
+
+    <div class="footer-links">
+      <a href="index.html">صفحه اصلی</a>
+      <a href="shop.html">فروشگاه</a>
+      <a href="custom-order.html">سفارش ساخت</a>
+      <a href="contact.html">ارتباط با ما</a>
+      <a href="https://www.instagram.com/zarinfakhrSZF/"
+         target="_blank" rel="noopener noreferrer">اینستاگرام</a>
+      <a href="https://t.me/zarinfakhrSZF"
+         target="_blank" rel="noopener noreferrer">تلگرام</a>
+    </div>
+
+    <p class="copyright">
+      © SILVER ZARIN FAKHR — تمامی حقوق محفوظ است.
+    </p>
+  </footer>
+</body>
+    </html>
