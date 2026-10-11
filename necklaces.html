@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F3E9DC">
+  <meta name="description" content="گردنبند و پلاک نقره زرین فخر؛ زیورآلات نقره خاص و دست‌ساز.">
+  <title>گردنبند و پلاک | نقره زرین فخر</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ivory: #F3E9DC;
+      --gold: #B88A4A;
+      --burgundy: #8F1718;
+      --wine: #4A0B09;
+      --white: #FFFFFF;
+      --text: #352923;
+      --muted: #786E65;
+      --border: #E5D7C5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Vazirmatn", Tahoma, sans-serif;
+      background: var(--ivory);
+      color: var(--text);
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .announcement {
+      background: var(--wine);
+      color: var(--white);
+      text-align: center;
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner,
+    main,
+    .footer-inner {
+      width: min(1120px, 100%);
+      margin-inline: auto;
+      padding-inline: 20px;
+    }
+
+    .header-inner {
+      min-height: 95px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .monogram {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font: 700 19px Georgia, serif;
+    }
+
+    .brand-en {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .brand-fa {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 43px;
+      padding: 9px 15px;
+      border: 1px solid var(--gold);
+      color: var(--wine);
+      font-family: inherit;
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: var(--gold);
+      color: var(--white);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      padding: 0 20px 14px;
+      justify-content: center;
+      font-size: 13px;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: var(--burgundy);
+    }
+
+    .breadcrumb {
+      padding-top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero {
+      padding: 45px 0 35px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    h1 {
+      margin: 8px 0;
+      font-size: clamp(27px, 5vw, 42px);
+      line-height: 1.6;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .notice {
+      margin: 15px 0 30px;
+      padding: 13px 16px;
+      background: rgba(255,255,255,.6);
+      border: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .section-heading {
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+
+    .product {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+    }
+
+    .product-art {
+      min-height: 230px;
+      display: grid;
+      place-items: center;
+      background: #EEE3D5;
+      color: var(--gold);
+      font-size: 55px;
+    }
+
+    .product-info {
+      padding: 18px;
+    }
+
+    .product h3 {
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .product p {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .price {
+      margin-top: 12px;
+      color: var(--burgundy) !important;
+      font-weight: 700;
+    }
+
+    .product .button {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .custom-box {
+      margin-bottom: 55px;
+      padding: 30px 20px;
+      border: 1px solid var(--gold);
+      text-align: center;
+      background: rgba(255,255,255,.4);
+    }
+
+    .custom-box h2 {
+      font-size: 22px;
+    }
+
+    .custom-box p {
+      margin: 8px auto 17px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer {
+      background: #EEE1D1;
+      border-top: 1px solid var(--border);
+      padding: 30px 0 18px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 25px;
+    }
+
+    footer h2,
+    footer h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    footer p,
+    footer a {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .copyright {
+      margin: 22px 20px 0;
+      padding-top: 13px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        padding-block: 15px;
+      }
+
+      .monogram {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+      }
+
+      .brand-en {
+        font-size: 11px;
+      }
+
+      nav {
+        justify-content: flex-start;
+        gap: 8px 15px;
+        font-size: 12px;
+      }
+
+      .header-inner,
+      main,
+      .footer-inner {
+        padding-inline: 13px;
+      }
+
+      .hero {
+        padding-top: 30px;
+      }
+
+      .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .product-art {
+        min-height: 155px;
+        font-size: 40px;
+      }
+
+      .product-info {
+        padding: 11px;
+      }
+
+      .product h3 {
+        font-size: 13px;
+      }
+
+      .product .button {
+        padding-inline: 5px;
+        font-size: 11px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .product-art {
+        min-height: 210px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">
+    نقره ۹۲۵ دست‌ساز؛ زیبایی در درخشندگی، اصالت در ماندگاری
+  </div>
+
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="صفحه اصلی نقره زرین فخر">
+        <span class="monogram">SZF</span>
+        <span>
+          <span class="brand-en">SILVER ZARIN FAKHR</span><br>
+          <span class="brand-fa">نقره زرین فخر</span>
+        </span>
+      </a>
+      <a class="button" href="shop.html">همه محصولات</a>
+    </div>
+
+    <nav aria-label="منوی اصلی">
+      <a href="index.html">صفحه اصلی</a>
+      <a href="shop.html">فروشگاه</a>
+      <a href="rings.html">انگشترها</a>
+      <a href="necklaces.html" aria-current="page">گردنبند و پلاک</a>
+      <a href="bracelets.html">دستبندها</a>
+      <a href="custom-order.html">سفارش ساخت</a>
+      <a href="contact.html">ارتباط با ما</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="breadcrumb">
+      <a href="index.html">صفحه اصلی</a> ←
+      <a href="shop.html">فروشگاه</a> ← گردنبند و پلاک
+    </div>
+
+    <section class="hero">
+      <div class="eyebrow">SILVER ZARIN FAKHR</div>
+      <h1>گردنبند و پلاک نقره زرین فخر</h1>
+      <p>
+        مجموعه گردنبندها و پلاک‌های نقره خاص؛
+        انتخابی ظریف برای استایل روزمره و مناسبت‌های ویژه.
+      </p>
+    </section>
+
+    <div class="notice">
+      محصولات این صفحه فعلاً نمایشی هستند. تصویر، عیار، وزن و قیمت هر محصول
+      باید پیش از انتشار با اطلاعات واقعی تأیید شوند.
+    </div>
+
+    <section aria-labelledby="products-title">
+      <h2 class="section-heading" id="products-title">مجموعه گردنبند و پلاک</h2>
+
+      <div class="products">
+        <article class="product">
+          <div class="product-art" aria-hidden="true">✧</div>
+          <div class="product-info">
+            <h3>پلاک نقره ظریف</h3>
+            <p>نمونه نمایشی؛ تصویر و مشخصات واقعی هنوز ثبت نشده است.</p>
+            <p class="price">قیمت: نیازمند تأیید</p>
+            <a class="button" href="https://instagram.com/zarinfakhrSZF" target="_blank" rel="noopener noreferrer">استعلام از پشتیبانی</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-art" aria-hidden="true">◇</div>
+          <div class="product-info">
+            <h3>گردنبند نقره دست‌ساز</h3>
+            <p>نمونه نمایشی؛ تصویر و مشخصات واقعی هنوز ثبت نشده است.</p>
+            <p class="price">قیمت: نیازمند تأیید</p>
+            <a class="button" href="https://instagram.com/zarinfakhrSZF" target="_blank" rel="noopener noreferrer">استعلام از پشتیبانی</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-art" aria-hidden="true">○</div>
+          <div class="product-info">
+            <h3>پلاک سفارشی</h3>
+            <p>امکان ساخت طرح اختصاصی پس از بررسی جزئیات مشخص می‌شود.</p>
+            <p class="price">قیمت: پس از بررسی طرح</p>
+            <a class="button" href="index.html#custom">بررسی سفارش ساخت</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="custom-box">
+      <h2>طرح دلخواهت را به زیورآلات تبدیل کن</h2>
+      <p>برای بررسی امکان ساخت پلاک یا گردنبند اختصاصی، با زرین فخر ارتباط بگیر.</p>
+      <a class="button" href="index.html#custom">اطلاعات سفارش ساخت</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2>SILVER ZARIN FAKHR</h2>
+        <p>نقره زرین فخر؛ زیبایی در درخشندگی، اصالت در ماندگاری.</p>
+        <p>زیورآلات نقره خاص و دست‌ساز.</p>
+      </div>
+
+      <div>
+        <h3>دسترسی سریع</h3>
+        <div class="footer-links">
+          <a href="index.html">صفحه اصلی</a>
+          <a href="shop.html">فروشگاه</a>
+          <a href="rings.html">انگشترها</a>
+          <a href="necklaces.html">گردنبند و پلاک</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>ارتباط با ما</h3>
+        <div class="footer-links">
+          <a href="https://instagram.com/zarinfakhrSZF" target="_blank" rel="noopener noreferrer">اینستاگرام</a>
+          <a href="https://t.me/zarinfakhrSZF" target="_blank" rel="noopener noreferrer">تلگرام</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © SILVER ZARIN FAKHR — تمامی حقوق محفوظ است.
+    </div>
+  </footer>
+</body>
+</html>
