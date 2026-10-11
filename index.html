@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#F3E9DC">
+  <meta name="description" content="نقره زرین فخر؛ زیورآلات نقره ۹۲۵ خاص و دست‌ساز.">
+
+  <title>نقره زرین فخر | SILVER ZARIN FAKHR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ivory: #F3E9DC;
+      --gold: #B88A4A;
+      --burgundy: #8F1718;
+      --wine: #4A0B09;
+      --silver: #C7C4BE;
+      --white: #FFFFFF;
+      --text: #352923;
+      --muted: #786E65;
+      --border: #E5D7C5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Vazirmatn", Tahoma, sans-serif;
+      background: var(--ivory);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .announcement {
+      background: var(--wine);
+      color: var(--white);
+      text-align: center;
+      padding: 8px 12px;
+      font-size: 11px;
+    }
+
+    header {
+      background: rgba(243, 233, 220, 0.97);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .monogram {
+      width: 48px;
+      height: 48px;
+      border: 1px solid var(--gold);
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 20px;
+      letter-spacing: -2px;
+    }
+
+    .brand-name {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
+
+    .brand-persian {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icon-button {
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--wine);
+      padding: 8px 11px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px 14px;
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      white-space: nowrap;
+      font-size: 12px;
+    }
+
+    nav a:hover {
+      color: var(--burgundy);
+    }
+
+    .hero {
+      max-width: 1200px;
+      margin: 28px auto;
+      padding: 0 20px;
+    }
+
+    .hero-panel {
+      position: relative;
+      min-height: 390px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(35, 17, 12, 0.12), rgba(35, 17, 12, 0.83)),
+        url("https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1800&q=85");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 36px;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 480px;
+    }
+
+    .eyebrow {
+      color: #E5C28D;
+      font-size: 12px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-size: clamp(27px, 5vw, 47px);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 14px;
+      color: #F4EAE0;
+      margin-bottom: 25px;
+    }
+
+    .primary-button {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      background: var(--gold);
+      color: white;
+      padding: 11px 25px;
+      font-size: 13px;
+      border-radius: 2px;
+    }
+
+    .primary-button:hover {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 65px auto;
+      padding: 0 20px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .section-heading span {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+      font-size: 25px;
+      margin-top: 5px;
+      font-weight: 700;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .category {
+      text-align: center;
+      padding: 24px 8px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.35);
+      transition: 0.2s;
+    }
+
+    .category:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .category-icon {
+      display: block;
+      font-size: 29px;
+      color: var(--gold);
+      margin-bottom: 7px;
+    }
+
+    .category h3 {
+      font-size: 13px;
+    }
+
+    .category p {
+      color: var(--muted);
+      font-size: 10px;
+      margin-top: 4px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .product-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .product-image {
+      aspect-ratio: 1 / 1;
+      background: #EDE4D9;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.04);
+    }
+
+    .product-info {
+      padding: 14px;
+    }
+
+    .product-info h3 {
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .product-description {
+      color: var(--muted);
+      font-size: 11px;
+      min-height: 25px;
+    }
+
+    .product-price {
+      color: var(--burgundy);
+      font-size: 13px;
+      font-weight: 700;
+      margin: 9px 0;
+    }
+
+    .product-note {
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    .product-button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 9px;
+      border: 1px solid var(--gold);
+      background: transparent;
+      color: var(--wine);
+      font-size: 11px;
+    }
+
+    .product-button:hover {
+      background: var(--gold);
+      color: white;
+    }
+
+    .trust {
+      background: var(--wine);
+      color: white;
+      padding: 38px 20px;
+    }
+
+    .trust-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .trust-item span {
+      display: block;
+      color: #E5C28D;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .trust-item h3 {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .trust-item p {
+      font-size: 11px;
+      color: #E6D8CC;
+    }
+
+    .custom-order {
+      max-width: 1160px;
+      margin: 65px auto;
+      padding: 35px 20px;
+      text-align: center;
+      border: 1px solid var(--gold);
+      background: rgba(255,255,255,0.35);
+    }
+
+    .custom-order h2 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .custom-order p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #EEE1D1;
+      border-top: 1px solid var(--border);
+      padding: 35px 20px 20px;
+    }
+
+    .footer-inner {
+      max-width: 1160px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footer-inner h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .footer-inner p,
+    .footer-inner a {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .copyright {
+      max-width: 1160px;
+      margin: 25px auto 0;
+      padding-top: 15px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .cart-count {
+      display: inline-grid;
+      place-items: center;
+      min-width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--burgundy);
+      color: white;
+      font-size: 10px;
+      margin-right: 3px;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        padding: 14px 12px;
+      }
+
+      .brand-name {
+        font-size: 11px;
+      }
+
+      .brand-persian {
+        font-size: 11px;
+      }
+
+      .monogram {
+        width: 41px;
+        height: 41px;
+        font-size: 17px;
+      }
+
+      .header-actions {
+        gap: 5px;
+      }
+
+      .icon-button {
+        padding: 7px;
+        font-size: 11px;
+      }
+
+      nav {
+        padding: 0 12px 12px;
+        gap: 20px;
+      }
+
+      .hero {
+        padding: 0 12px;
+        margin: 16px auto;
+      }
+
+      .hero-panel {
+        min-height: 340px;
+        padding: 22px;
+        background-position: 40% center;
+      }
+
+      .hero p {
+        font-size: 12px;
+      }
+
+      .section {
+        padding: 0 12px;
+        margin: 45px auto;
+      }
+
+      .section-heading h2 {
+        font-size: 21px;
+      }
+
+      .categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .category {
+        padding: 18px 5px;
+      }
+
+      .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .product-info {
+        padding: 10px;
+      }
+
+      .product-info h3 {
+        font-size: 12px;
+      }
+
+      .product-price {
+        font-size: 12px;
+      }
+
+      .trust-inner {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .custom-order {
+        margin: 45px 12px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement">
+    نقره ۹۲۵ دست‌ساز؛ زیبایی در درخشندگی، اصالت در ماندگاری
+  </div>
+
+  <header>
+    <div class="header-inner">
+
+      <a href="#" class="brand" aria-label="صفحه اصلی نقره زرین فخر">
+        <div class="monogram">SZF</div>
+        <div>
+          <div class="brand-name">SILVER ZARIN FAKHR</div>
+          <div class="brand-persian">نقره زرین فخر</div>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <button class="icon-button" type="button" onclick="searchProducts()">
+          جست‌وجو⌕
+        </button>
+
+        <button class="icon-button" type="button" onclick="showCart()">
+          سبد خرید <span class="cart-count" id="cartCount">۰</span>
+        </button>
+      </div>
+
+    </div>
+
+    <nav aria-label="منوی اصلی">
+      <a href="#">صفحه اصلی</a>
+      <a href="#categories">دسته‌بندی محصولات</a>
+      <a href="#products">محصولات منتخب</a>
+      <a href="#custom">سفارش ساخت</a>
+      <a href="#about">درباره ما</a>
+      <a href="#contact">ارتباط با ما</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-panel">
+        <div class="hero-content">
+          <div class="eyebrow">SILVER ZARIN FAKHR</div>
+
+          <h1>درخشش اصیل،<br>برای انتخاب‌های خاص</h1>
+
+          <p>
+            دنیای زیورآلات نقره با طراحی‌های خاص،
+            ظرافت ماندگار و هنر ساخت دست‌ساز.
+          </p>
+
+          <a class="primary-button" href="#products">
+            مشاهده محصولات
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+
+      <div class="section-heading">
+        <span>EXPLORE COLLECTIONS</span>
+        <h2>دسته‌بندی محصولات</h2>
+        <p>زیبایی را مطابق سلیقه خودت انتخاب کن.</p>
+      </div>
+
+      <div class="categories">
+
+        <a class="category" href="#products">
+          <span class="category-icon">◇</span>
+          <h3>انگشتر نقره</h3>
+          <p>ظرافت در هر جزئیات</p>
+        </a>
+
+        <a class="category" href="#products">
+          <span class="category-icon">♧</span>
+          <h3>گردنبند و پلاک</h3>
+          <p>درخشش نزدیک به قلب</p>
+        </a>
+
+        <a class="category" href="#products">
+          <span class="category-icon">○</span>
+          <h3>دستبند</h3>
+          <p>زیبایی در حرکت</p>
+        </a>
+
+        <a class="category" href="#products">
+          <span class="category-icon">✧</span>
+          <h3>زیورآلات خاص</h3>
+          <p>انتخابی متفاوت</p>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="section" id="products">
+
+      <div class="section-heading">
+        <span>THE COLLECTION</span>
+        <h2>منتخب زرین فخر</h2>
+        <p>نمونه نمایشی طراحی محصولات فروشگاه</p>
+      </div>
+
+      <div class="products">
+
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80"
+              alt="نمونه تصویری انگشتر نقره"
+              loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <h3>انگشتر نقره</h3>
+            <p class="product-description">نمونه طراحی محصول</p>
+            <p class="product-note">قیمت در نسخه آزمایشی ثبت نشده است.</p>
+            <button class="product-button" type="button" onclick="requestProduct('انگشتر نقره')">
+              درخواست اطلاعات محصول
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"
+              alt="نمونه تصویری زیورآلات نقره"
+              loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <h3>زیورآلات ظریف</h3>
+            <p class="product-description">طراحی مینیمال و مدرن</p>
+            <p class="product-note">قیمت در نسخه آزمایشی ثبت نشده است.</p>
+            <button class="product-button" type="button" onclick="requestProduct('زیورآلات ظریف')">
+              درخواست اطلاعات محصول
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80"
+              alt="نمونه تصویری گردنبند"
+              loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <h3>گردنبند خاص</h3>
+            <p class="product-description">الهام‌گرفته از زیبایی ماندگار</p>
+            <p class="product-note">قیمت در نسخه آزمایشی ثبت نشده است.</p>
+            <button class="product-button" type="button" onclick="requestProduct('گردنبند خاص')">
+              درخواست اطلاعات محصول
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="trust" id="about">
+      <div class="trust-inner">
+
+        <div class="trust-item">
+          <span>◇</span>
+          <h3>توجه به اصالت</h3>
+          <p>مشخصات و عیار هر محصول باید پیش از خرید شفاف باشد.</p>
+        </div>
+
+        <div class="trust-item">
+          <span>✧</span>
+          <h3>هنر ساخت</h3>
+          <p>تمرکز بر طراحی خاص و ظرافت زیورآلات نقره.</p>
+        </div>
+
+        <div class="trust-item">
+          <span>♡</span>
+          <h3>پشتیبانی مشتری</h3>
+          <p>امکان پیگیری و دریافت راهنمایی پیش از سفارش.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="custom-order" id="custom">
+      <h2>زیورآلاتی مطابق سلیقه تو</h2>
+      <p>
+        برای بررسی امکان ساخت انگشتر، گردنبند یا طرح اختصاصی،
+        با نقره زرین فخر تماس بگیر.
+      </p>
+      <a
+        class="primary-button"
+        href="https://instagram.com/zarinfakhrSZF"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ارتباط با زرین فخر
+      </a>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <h3>SILVER ZARIN FAKHR</h3>
+        <p>
+          نقره زرین فخر؛ زیبایی در درخشندگی،
+          اصالت در ماندگاری.
+        </p>
+        <p style="margin-top: 10px;">
+          زیورآلات نقره خاص و دست‌ساز.
+        </p>
+      </div>
+
+      <div>
+        <h3>دسترسی سریع</h3>
+        <div class="footer-links">
+          <a href="#products">محصولات</a>
+          <a href="#categories">دسته‌بندی‌ها</a>
+          <a href="#custom">سفارش ساخت</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>ارتباط با ما</h3>
+        <div class="footer-links">
+          <a href="https://instagram.com/zarinfakhrSZF"
+             target="_blank" rel="noopener noreferrer">
+            اینستاگرام
+          </a>
+          <a href="https://t.me/zarinfakhrSZF"
+             target="_blank" rel="noopener noreferrer">
+            تلگرام
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © SILVER ZARIN FAKHR — تمامی حقوق محفوظ است.
+    </div>
+
+  </footer>
+
+  <script>
+    "use strict";
+
+    function searchProducts() {
+      const query = prompt("نام محصول موردنظر را وارد کن:");
+
+      if (query === null || !query.trim()) {
+        return;
+      }
+
+      const cards = document.querySelectorAll(".product-card");
+      let found = false;
+
+      cards.forEach(function(card) {
+        const name = card.querySelector("h3").textContent;
+        const matches = name.includes(query.trim());
+
+        card.style.display = matches ? "" : "none";
+
+        if (matches) {
+          found = true;
+        }
+      });
+
+      document.getElementById("products").scrollIntoView({
+        behavior: "smooth"
+      });
+
+      if (!found) {
+        alert("محصولی با این نام در نمونه فعلی پیدا نشد.");
+      }
+    }
+
+    function requestProduct(productName) {
+      alert(
+        "محصول انتخاب‌شده: " + productName +
+        "\nاین نسخه نمایشی است و هنوز به سیستم سفارش واقعی متصل نشده است."
+      );
+    }
+
+    function showCart() {
+      alert(
+        "سبد خرید در مرحله طراحی است. " +
+        "پس از پیاده‌سازی سیستم سفارش، خرید واقعی فعال خواهد شد."
+      );
+    }
+  </script>
+
+</body>
+    </html>
